@@ -1,0 +1,29 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PlaneTest {
+	private Plane myPlane;
+	private Flyable fly;
+	@BeforeEach
+	void setUp() throws Exception {
+	 myPlane = new Plane(4, "AirBus A380");
+	
+	}
+
+	@Test
+	void toString_airBusModelwith4Engines() {
+		
+		assertEquals("AirBus A380 with 4 engines", myPlane.toString());
+	}
+	
+	@Test
+	void launch_PlaneRooling_TakeOff() {	
+		
+		assertEquals("Flapping the wings to take off"+System.lineSeparator(), myPlane.launch());
+	}
+
+}

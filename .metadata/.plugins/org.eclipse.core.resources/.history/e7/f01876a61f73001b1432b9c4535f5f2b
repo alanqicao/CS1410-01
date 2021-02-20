@@ -1,0 +1,9 @@
+package cn.sxt.game;
+
+public class Plane {
+
+	public Plane() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

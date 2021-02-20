@@ -1,0 +1,9 @@
+package cn.sxt.game;
+
+public class GameUtil {
+
+	public GameUtil() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

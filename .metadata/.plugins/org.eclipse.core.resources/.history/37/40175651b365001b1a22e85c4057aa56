@@ -1,0 +1,31 @@
+package recursion;
+
+public class Recursion {
+	
+
+		
+		public static String toUpper(String str) {
+			if(str.length()==0)return str;
+			str= str.toUpperCase();
+			
+			if(str.charAt(str.length())!= str.charAt(str.length())) {
+			return str.charAt(0)+" "+ toUpper(str.substring(1));
+			}return str.charAt(0)+ toUpper(str.substring(1));
+		}
+		
+		public static int countSmiles(char[] letters, int index){
+			
+			return 0;
+		}
+		
+
+		public static int sumOfDigits(int n) {
+			
+				if(n==0) return 0;
+			return (Math.abs(n)%10)+sumOfDigits(Math.abs(n)/10);
+			
+		}
+		
+		
+		
+}

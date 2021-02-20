@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+/**
+ * @author caose_000
+ *
+ */
+class PlaneTest {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	/**
+	 * Test method for {@link labInterface.Plane#Plane(int, java.lang.String)}.
+	 */
+	@Test
+	void testPlane() {
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * Test method for {@link labInterface.Plane#toString()}.
+	 */
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * Test method for {@link labInterface.Plane#launch()}.
+	 */
+	@Test
+	void testLaunch() {
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * Test method for {@link labInterface.Plane#land()}.
+	 */
+	@Test
+	void testLand() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,70 @@
+package nuisance;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NuisanceApp {
+
+	public NuisanceApp() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		//Test Persons:
+		Friend friend = new Friend("Juan",27,Hobby.MUSIC);
+		Friend friend2 = new Friend("Kate",27,Hobby.SPORTS);
+		Friend friend3 = new Friend("Alex",12,Hobby.MUSIC);
+		Friend[] arrayFriends = {friend,friend2,friend3};
+		System.out.println("3 Friends: ");
+		int count = 1;
+			for(Friend e: arrayFriends) {
+				
+				System.out.println("friend"+count+": "+e.toString());
+				count++;			
+			}
+			System.out.println();
+			Friend newFriend = new Friend("Kate",27,Hobby.SPORTS);
+			System.out.println("friend1 equals friend2: "+friend.equals(friend2));
+			System.out.println("friend1 equals friend3: "+friend.equals(friend3));
+			System.out.println("friend2 equals new friend: "+friend2.equals(newFriend));
+			
+			Telemarketer telMarketer1= new Telemarketer("Fritz",25);
+			System.out.println("telemarketer: "+telMarketer1);
+			System.out.println();
+			
+		//Test Insects:
+			Mosquito mosq1= new Mosquito("Aedes vexans");
+			PeskyMosquito pMosq1= new PeskyMosquito("Anopheles walkeri");
+			
+			Butterfly butterF1= new Butterfly("Swallowtail",List.of("yellow","black","blue"));
+			Butterfly butterF2= new Butterfly(butterF1);
+			
+			Insect[] insectArray = {mosq1,pMosq1,butterF1,butterF2};
+			System.out.println("4 Insects: ");
+			for(Insect e: insectArray) {
+				System.out.println(e);
+			}
+			System.out.println();
+			
+		//Test interface Nuisance
+			Nuisance[] nuisanceArray = {telMarketer1,mosq1,pMosq1};
+			System.out.println("3 Nuisances: ");
+			
+			for(Nuisance e: nuisanceArray) {
+				if(e instanceof Mosquito) {
+					System.out.println(((Mosquito)e).buzz());
+				
+				}
+				if(e instanceof PeskyMosquito) {
+					System.out.println(((PeskyMosquito)e).bite());
+					
+				}
+				if(e instanceof Nuisance){
+					System.out.println(e.annoy());
+					
+				}
+				System.out.println();
+			}
+	}
+
+}

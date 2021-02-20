@@ -1,0 +1,16 @@
+package nuisance;
+
+public class Telemarketer extends Person {
+
+	public Telemarketer(String name, int age) {
+		super(name, age);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String giveSalesPitch() {
+		return null;
+	}
+	
+	
+
+}

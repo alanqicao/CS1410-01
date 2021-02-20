@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package nuisance;
+
+import nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Mosquito extends nuisance {
+
+	/**
+	 * 
+	 */
+	public Mosquito() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

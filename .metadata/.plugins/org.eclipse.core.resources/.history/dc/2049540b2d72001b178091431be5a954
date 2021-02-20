@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Friend extends Person {
+	
+	private Hobby hobby;
+	/**
+	 * @param name
+	 * @param age
+	 */
+	public Friend(String name, int age, Hobby hobby) {
+		super(name, age);
+		this.hobby = hobby;
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String chill() {
+		
+		return super.getName()+" is chilling";
+	}
+	
+	public String play(Friend[] friends) {
+		String sn = "Playing "+hobby+"with ";
+		if(friends.length>0) {
+			sn+=friends[0];
+			for(int i=1; i<friends.length-1; i++) {
+				
+				sn+=", "+friends[i];
+				
+			}
+			
+			sn+=" and "+friends[friends.length]+".?";
+		}
+		
+		
+	
+		return sn;
+	}
+
+	@Override
+	public String toString() {
+		return "Friend [hobby=" + hobby + "]";
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package nuisance;
+
+public class Mosquito extends Insect {
+
+	public Mosquito(String species) {
+		super(species);
+		// TODO Auto-generated constructor stub
+	}
+
+}

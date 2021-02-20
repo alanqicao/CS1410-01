@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Person {
+	private String name;
+	private int age;
+	/**
+	 * @param name
+	 * @param age
+	 */
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+	
+}

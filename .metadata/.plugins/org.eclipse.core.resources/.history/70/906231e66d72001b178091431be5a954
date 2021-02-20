@@ -1,0 +1,28 @@
+package nuisance;
+
+public class NuisanceApp {
+
+	public NuisanceApp() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		Friend friend = new Friend("Juan",27,Hobby.MUSIC);
+		Friend friend2 = new Friend("Kate",27,Hobby.SPORTS);
+		Friend friend3 = new Friend("Alex",12,Hobby.MUSIC);
+		Friend[] arrayFriends = {friend,friend2,friend3};
+		System.out.println("3 Friends: ");
+		int count = 1;
+			for(Friend e: arrayFriends) {
+				
+				System.out.println("friend"+count+": "+e.toString());
+				count++;			
+			}
+			System.out.println();
+			Friend newFriend = new Friend("Kate",27,Hobby.SPORTS);
+			System.out.println("friend1 equals friend2: "+friend.equals(friend2));
+			System.out.println("friend1 equals friend3: "+friend.equals(friend3));
+			System.out.println("friend2 equals new friend: "+friend2.equals(newFriend));
+	}
+
+}

@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package nuisance;
+
+import java.util.Collections;
+import java.util.List;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Butterfly extends Insect {
+	
+	private List<String> colors;
+	/**
+	 * @param species
+	 */
+	public Butterfly(String species, List<String> colors) {
+		super(species);
+		this.colors.addAll(colors);
+	}
+	
+	public Butterfly(Butterfly butterfly) {
+		super(butterfly.getSpecies());
+		this.colors = butterfly.getColors();
+		//new Butterfly(butterfly.getSpecies(), butterfly.getColors());
+	}
+
+	/**
+	 * @return the colors
+	 */
+	public List<String> getColors() {
+		return Collections.unmodifiableList(this.colors);
+	}
+	
+	@Override
+	public String toString() {
+		if(colors == null) {
+			return getSpecies()+"[]";
+		}else {
+			return getSpecies()+" "+(colors);
+		}
+	}
+	
+}

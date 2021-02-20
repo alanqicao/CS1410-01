@@ -1,0 +1,9 @@
+package cn.sxt.game;
+
+public class Constant {
+
+	public Constant() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

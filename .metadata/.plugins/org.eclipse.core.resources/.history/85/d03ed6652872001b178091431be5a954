@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Butterfly extends Insect {
+
+	/**
+	 * @param species
+	 */
+	public Butterfly(String species) {
+		super(species);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,33 @@
+package guitar;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Guitar {
+	private boolean electric;
+	private int numberOfStrings;
+	/**
+	 * @param electric
+	 * @param numberOfStrings
+	 */
+	public Guitar(boolean electric, int numberOfStrings) {
+		this.electric = electric;
+		this.numberOfStrings = numberOfStrings;
+	}
+	
+	public boolean equals(Object obj) {
+		return false;
+	}
+	
+	public int hashCode() {
+		return 0;
+	}
+
+	@Override
+	public String toString() {
+		return "Guitar [electric=" + electric + ", numberOfStrings=" + numberOfStrings + "]";
+	}
+	
+	
+}

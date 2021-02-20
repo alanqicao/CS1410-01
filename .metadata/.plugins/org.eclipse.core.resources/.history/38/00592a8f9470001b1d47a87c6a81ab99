@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package labInterface;
+
+/**
+ * @author caose_000
+ *
+ */
+public interface Flyable {
+
+}

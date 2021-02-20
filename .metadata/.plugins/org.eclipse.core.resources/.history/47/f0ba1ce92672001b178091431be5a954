@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Friend extends Person {
+
+	/**
+	 * @param name
+	 * @param age
+	 */
+	public Friend(String name, int age) {
+		super(name, age);
+		// TODO Auto-generated constructor stub
+	}
+
+}

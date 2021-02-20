@@ -1,0 +1,86 @@
+package codingBat;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class CodingBatTest {
+	private CodingBat newWord;
+
+	@BeforeEach
+	void setUp() throws Exception {
+		newWord = new CodingBat();
+		
+	}
+
+
+
+	@Test
+	void testWordEndsCase1() {
+		
+		String expected = "c13i";
+		String actual = newWord.wordEnds("abcXY123XYijk","XY");
+		assertEquals(expected,actual);
+		
+		
+	}
+	
+	@Test
+	void testWordEndsCase2() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase3() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase4() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase5() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase6() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase7() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWordEndsCase8() {
+		fail("Not yet implemented");
+	}
+	@Test
+	void testWordEndsCase9() {
+		fail("Not yet implemented");
+	}
+	@Test
+	void testWordEndsCase10() {
+		fail("Not yet implemented");
+	}
+	@Test
+	void testWordEndsCase11() {
+		fail("Not yet implemented");
+	}
+	@Test
+	void testWordEndsCase12() {
+		fail("Not yet implemented");
+	}
+	@Test
+	void testWordEnds13() {
+		fail("Not yet implemented");
+	}
+	
+	
+
+}

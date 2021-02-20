@@ -1,0 +1,30 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class PlaneTest {
+	private static ByteArrayOutputStream message;
+	private static PrintStream consoleOutput;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		consoleOutput =System.out;
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

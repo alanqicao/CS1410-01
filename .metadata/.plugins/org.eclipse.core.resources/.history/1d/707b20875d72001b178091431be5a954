@@ -1,0 +1,17 @@
+package nuisance;
+
+public class App {
+
+	public App() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		Friend friend = new Friend("Alan",22,Hobby.MUSIC);
+		Friend friend2 = new Friend("Sam",22,Hobby.MUSIC);
+		Friend friend3 = new Friend("Leo",25,Hobby.MUSIC);
+		Friend[] arrayFriends = {friend,friend2};
+			System.out.println(friend.play(arrayFriends));
+	}
+
+}

@@ -1,0 +1,20 @@
+package nuisance;
+
+public class Telemarketer extends Person implements Nuisance{
+
+	public Telemarketer(String name, int age) {
+		super(name, age);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String giveSalesPitch() {
+		return super.getName()+" pressures others to buy stuff.";
+	}
+	
+	 @Override
+	   public String annoy() {
+	       return super.getName()+" annoys by giving a sales pitch.";
+	   }
+	
+
+}

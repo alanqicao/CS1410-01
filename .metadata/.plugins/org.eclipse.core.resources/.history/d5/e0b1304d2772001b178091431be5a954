@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package nuisance;
+
+/**
+ * @author caose_000
+ *
+ */
+public class Insect {
+
+	/**
+	 * 
+	 */
+	public Insect() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

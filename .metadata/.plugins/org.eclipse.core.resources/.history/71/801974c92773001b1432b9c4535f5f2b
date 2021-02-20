@@ -1,0 +1,6 @@
+package cn.sxt.game;
+
+public enum Constant {
+	GAME_WIDH = 500;
+	
+}

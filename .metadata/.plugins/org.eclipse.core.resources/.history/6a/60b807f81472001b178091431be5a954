@@ -1,0 +1,18 @@
+package guitar;
+
+public class GuitarApp {
+
+	public static void main(String[] args) {
+		Guitar guitar1 = new Guitar(true,6);
+		Guitar guitar2 = new Guitar(false,12);
+		Guitar guitar3 = new Guitar(true,6);
+		
+		Guitar[] guitars= {guitar1,guitar2,guitar3};
+		
+		for(Guitar e: guitars) {
+			System.out.println(e);
+		}
+		
+	}
+
+}

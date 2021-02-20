@@ -1,0 +1,9 @@
+package cn.sxt.game;
+
+public class Shell {
+
+	public Shell() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
